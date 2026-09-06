@@ -1615,7 +1615,7 @@ export const team: Member[] = [
 
   {
     slug: "sunita-joshi",
-    name: "Mrs. Sunita Joshi",
+    name: "Er. Sunita Joshi",
     position: "Faculty Counselor",
     department: "SCA, MRIIRS",
     group: "Faculty",
