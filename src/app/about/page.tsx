@@ -5,29 +5,34 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import {
   ArrowRight,
+  Award,
+  BrainCircuit,
   Building2,
   CalendarDays,
+  Cpu,
   Eye,
   FlaskConical,
   Handshake,
   Lightbulb,
-  Radio,
-  Users,
-  Cpu,
-  BrainCircuit,
-  Award,
-  Search,
   MessageSquareQuote,
+  Radio,
+  Search,
+  Users,
 } from "lucide-react";
 
 import aboutImage from "@/assets/Team.png";
 import hero from "@/assets/hero.jpg";
+
 import { PageHeader } from "@/components/common/PageHeader";
 import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { JoinCTA } from "@/components/sections/JoinCTA";
-import { site } from "@/data/site";
+import { site, ieeeAdvisors, collegeAdvisors, deanMessage } from "@/data/site";
+
+/* =========================================================
+   MISSION
+========================================================= */
 
 const pillars = [
   {
@@ -60,6 +65,11 @@ const missionObjectives = [
   "Develop leadership, teamwork, communication, and problem-solving skills.",
   "Create a collaborative environment where students can transform ideas into impactful solutions.",
 ];
+
+/* =========================================================
+   IEEE AP-S
+========================================================= */
+
 const apFocus = [
   "Antennas & Propagation",
   "Electromagnetics",
@@ -69,17 +79,27 @@ const apFocus = [
   "Emerging Wireless Technologies",
 ];
 
+/* =========================================================
+   COLLABORATIONS
+========================================================= */
+
 const academicCollaborations = [
   "School of Computer Applications, MRIIRS",
   "School of Engineering & Technology, MRIIRS",
   "Department of Electronics & Communication Engineering",
   "Internal Quality Assurance Cell, MRIIRS",
 ];
+
 const ieeeEngagements = [
   "IEEE Delhi Section",
   "IEEE Young Professionals Delhi Section",
   "IEEE Antennas & Propagation Society",
 ];
+
+/* =========================================================
+   TECHNICAL FOCUS
+========================================================= */
+
 const focusAreas = [
   {
     icon: BrainCircuit,
@@ -125,6 +145,10 @@ const focusAreas = [
   },
 ];
 
+/* =========================================================
+   PAGE
+========================================================= */
+
 export default function AboutPage() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -137,13 +161,13 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* =========================================================
+      {/* =====================================================
           PAGE HEADER
-      ========================================================= */}
-      <div className="lg:px-28 lg:grid gap-10 bg-gradient-navy  lg:grid-cols-2 lg:items-center lg:gap-14">
-        {/* Content */}
+      ===================================================== */}
+
+      <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-28 bg-gradient-navy">
         <div
-          className=" max-lg:hidden grid-lines absolute inset-0 opacity-40"
+          className="absolute inset-0 max-lg:hidden grid-lines opacity-40"
           aria-hidden
         />
 
@@ -153,25 +177,20 @@ export default function AboutPage() {
           description={`The ${site.branchName} is a student-driven community at ${site.collegeName}, dedicated to fostering technical excellence, innovation, professional development, and leadership. Through workshops, expert talks, competitions, internships, industry interactions, and collaborative initiatives, the branch provides students with opportunities to learn, explore emerging technologies, and turn ideas into meaningful impact.`}
         />
 
-        {/* Image */}
-        <div className=" max-lg:hidden group overflow-hidden rounded-2xl  sm:rounded-3xl">
+        <div className="group max-lg:hidden overflow-hidden rounded-2xl sm:rounded-3xl">
           <img
             src={hero.src}
             alt="IEEE student members working together in a lab"
             loading="lazy"
-            className="
-            aspect-4/3
-          object-contain
-          transition-transform
-          duration-700
-          group-hover:scale-105
-          "
+            className="aspect-[4/3] object-contain transition-transform duration-700 group-hover:scale-105"
           />
         </div>
       </div>
-      {/* =========================================================
+
+      {/* =====================================================
           MISSION
-      ========================================================= */}
+      ===================================================== */}
+
       <section className="py-24">
         <div className="container-page grid items-center gap-14 lg:grid-cols-2">
           <div
@@ -226,9 +245,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =========================================================
+      {/* =====================================================
           MISSION OBJECTIVES
-      ========================================================= */}
+      ===================================================== */}
+
       <section className="border-y border-border bg-surface py-24">
         <div className="container-page">
           <SectionHeading
@@ -256,13 +276,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =========================================================
+      {/* =====================================================
           JOURNEY & VISION
-      ========================================================= */}
+      ===================================================== */}
+
       <section className="py-24">
         <div className="container-page">
           <div className="grid gap-8 lg:grid-cols-2">
-            {/* Our Journey */}
             <Reveal>
               <div className="h-full rounded-3xl border border-border bg-card p-8 shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-primary/40 md:p-10">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
@@ -299,7 +319,6 @@ export default function AboutPage() {
               </div>
             </Reveal>
 
-            {/* Vision */}
             <Reveal delay={0.1}>
               <div className="relative h-full overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-primary/40 md:p-10">
                 <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
@@ -329,7 +348,7 @@ export default function AboutPage() {
                       (item) => (
                         <div
                           key={item}
-                          className="rounded-xl border border-border bg-background/60 px-3 py-3 text-center text-xs hover:-translate-y-1 hover:border-primary/40 font-semibold"
+                          className="rounded-xl border border-border bg-background/60 px-3 py-3 text-center text-xs font-semibold hover:-translate-y-1 hover:border-primary/40"
                         >
                           {item}
                         </div>
@@ -343,49 +362,71 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =========================================================
+      {/* =====================================================
           COUNSELLOR MESSAGE
-      ========================================================= */}
+      ===================================================== */}
+
       <section className="border-y border-border bg-surface py-24">
         <div className="container-page">
           <Reveal>
-            <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-soft md:p-12">
-              <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-primary/10 blur-3xl" />
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div className="grid lg:grid-cols-[0.65fr_1.35fr]">
+                <div className="relative min-h-[360px] bg-primary/5">
+                  <img
+                    src="/advisors/sunita-joshi.jpg"
+                    alt="Er. Sunita Joshi"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
 
-              <div className="relative">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                    <MessageSquareQuote className="h-6 w-6 text-primary" />
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-                      Leadership message
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 pt-20">
+                    <p className="font-bold text-white">Er. Sunita Joshi</p>
+                    <p className="mt-1 text-sm text-white/80">
+                      IEEE Student Branch Counsellor
                     </p>
-
-                    <h2 className="mt-1 text-2xl font-bold md:text-3xl">
-                      Message from the Branch Counsellor
-                    </h2>
                   </div>
                 </div>
 
-                <blockquote className="mt-8 border-l-2 border-primary/40 pl-6 text-base leading-8 text-muted-foreground md:text-lg">
-                  IEEE Student Branch MRIIRS provides students with a platform
-                  to explore beyond the classroom, engage with emerging
-                  technologies, and develop the skills needed to thrive in a
-                  rapidly evolving world. Through learning, collaboration, and
-                  innovation, we encourage our students to grow into confident
-                  professionals and responsible technology leaders.
-                </blockquote>
+                <div className="relative p-8 md:p-12">
+                  <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-primary/10 blur-3xl" />
 
-                <div className="mt-8">
-                  <p className="font-bold text-foreground">
-                    — Er. Sunita Joshi
-                  </p>
+                  <div className="relative">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
+                        <MessageSquareQuote className="h-6 w-6 text-primary" />
+                      </div>
 
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    IEEE Student Branch Counsellor, MRIIRS
-                  </p>
+                      <div>
+                        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                          Leadership message
+                        </p>
+
+                        <h2 className="mt-1 text-2xl font-bold md:text-3xl">
+                          Message from the Branch Counsellor
+                        </h2>
+                      </div>
+                    </div>
+
+                    <blockquote className="mt-8 border-l-2 border-primary/40 pl-6 text-base leading-8 text-muted-foreground md:text-lg">
+                      IEEE Student Branch MRIIRS provides students with a
+                      platform to explore beyond the classroom, engage with
+                      emerging technologies, and develop the skills needed to
+                      thrive in a rapidly evolving world. Through learning,
+                      collaboration, and innovation, we encourage our students
+                      to grow into confident professionals and responsible
+                      technology leaders.
+                    </blockquote>
+
+                    <div className="mt-8">
+                      <p className="font-bold text-foreground">
+                        — Er. Sunita Joshi
+                      </p>
+
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        IEEE Student Branch Counsellor, MRIIRS
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -393,7 +434,215 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Chapters & Societies */}
+      {/* =====================================================
+          ADVISORS & LEADERSHIP
+      ===================================================== */}
+
+      <section className="py-24">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Advisors & Leadership"
+            title="Guided by experience. Driven by innovation."
+            description="Our student branch is supported by experienced IEEE leaders and academic advisors who provide guidance, encouragement, and direction to help students learn, innovate, and lead."
+            align="center"
+          />
+
+          {/* -------------------------------------------------
+              IEEE DELHI SECTION
+          ------------------------------------------------- */}
+
+          <div className="mt-16">
+            <div className="mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                IEEE Delhi Section
+              </p>
+
+              <h3 className="mt-2 text-2xl font-bold tracking-tight md:text-3xl">
+                Office Bearers
+              </h3>
+
+              <p className="mt-3 max-w-3xl text-muted-foreground">
+                Leadership and guidance from the IEEE Delhi Section help
+                strengthen our student community and connect students with the
+                wider IEEE ecosystem.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {ieeeAdvisors.map((advisor, index) => (
+                <Reveal
+                  key={`${advisor.name}-${advisor.role}`}
+                  delay={index * 0.06}
+                >
+                  <div className="group h-full overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-primary/40">
+                    <div className="relative flex justify-center overflow-hidden bg-primary/5 px-6 pt-8">
+                      <div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-background shadow-lg">
+                        <img
+                          src={advisor.image}
+                          alt={advisor.name}
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="p-7 text-center">
+                      <h4 className="text-lg font-bold text-foreground">
+                        {advisor.name}
+                      </h4>
+
+                      <p className="mt-1 text-sm font-medium text-primary">
+                        {advisor.role}
+                      </p>
+
+                      <div className="my-5 h-px bg-border" />
+
+                      <div className="flex justify-center">
+                        <MessageSquareQuote className="h-5 w-5 text-primary/70" />
+                      </div>
+
+                      <blockquote className="mt-3 text-sm leading-7 text-muted-foreground">
+                        “{advisor.quote}”
+                      </blockquote>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+
+          {/* -------------------------------------------------
+              MRIIRS LEADERSHIP
+          ------------------------------------------------- */}
+
+          <div className="mt-20">
+            <div className="mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                Our Institution
+              </p>
+
+              <h3 className="mt-2 text-2xl font-bold tracking-tight md:text-3xl">
+                MRIIRS Leadership & Advisors
+              </h3>
+
+              <p className="mt-3 max-w-3xl text-muted-foreground">
+                Support from the leadership and academic community of MRIIRS
+                enables the IEEE Student Branch to create meaningful
+                opportunities for students.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {collegeAdvisors.map((advisor, index) => (
+                <Reveal key={advisor.name} delay={index * 0.08}>
+                  <div className="group h-full overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-primary/40">
+                    <div className="relative aspect-[4/5] overflow-hidden bg-primary/5">
+                      {advisor.image ? (
+                        <img
+                          src={advisor.image}
+                          alt={advisor.name}
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center">
+                          <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-background bg-primary/10 text-4xl font-bold text-primary shadow-lg">
+                            {advisor.initials}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/70 to-transparent" />
+                    </div>
+
+                    <div className="p-6">
+                      <h4 className="text-lg font-bold">{advisor.name}</h4>
+
+                      <p className="mt-2 text-sm font-medium text-primary">
+                        {advisor.role}
+                      </p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          DEAN'S MESSAGE
+      ===================================================== */}
+
+      <section className="border-y border-border bg-surface py-24">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Dean's Message"
+            title="Empowering learners to innovate, collaborate and lead"
+            description="A message from the Dean, School of Computer Applications, MRIIRS."
+            align="center"
+          />
+
+          <Reveal>
+            <div className="mt-14 overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div className="grid lg:grid-cols-[0.75fr_1.25fr]">
+                {/* Dean Photo */}
+                <div className="relative min-h-[500px] bg-primary/5">
+                  <img
+                    src="/advisors/shaveta-bhatiya.jpg"
+                    alt="Prof. (Dr.) Shaveta Bhatiya, Dean"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-8 pt-28">
+                    <p className="text-xl font-bold text-white">
+                      Prof. (Dr.) Shaveta Bhatiya
+                    </p>
+
+                    <p className="mt-1 text-sm text-white/80">
+                      Dean, School of Computer Applications, MRIIRS
+                    </p>
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div className="p-8 lg:p-12">
+                  <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
+                    <MessageSquareQuote className="h-6 w-6 text-primary" />
+                  </div>
+
+                  <div className="space-y-5">
+                    {deanMessage.map((paragraph, index) => (
+                      <p
+                        key={index}
+                        className="text-base leading-8 text-muted-foreground"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+
+                  <div className="mt-10 border-t border-border pt-6">
+                    <p className="font-bold text-foreground">
+                      — Prof. (Dr.) Shaveta Bhatiya
+                    </p>
+
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Dean, School of Computer Applications, MRIIRS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* =====================================================
+          IEEE CHAPTERS & SOCIETIES
+      ===================================================== */}
+
       <section className="border-y border-border bg-surface py-24">
         <div className="container-page">
           <SectionHeading
@@ -456,7 +705,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Collaborations */}
+      {/* =====================================================
+          COLLABORATIONS
+      ===================================================== */}
+
       <section className="py-24">
         <div className="container-page">
           <SectionHeading
@@ -467,8 +719,9 @@ export default function AboutPage() {
           />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
+            {/* Academic */}
             <Reveal>
-              <div className="h-full rounded-3xl border border-border bg-card p-7 hover:-translate-y-1 hover:border-primary/40 shadow-soft">
+              <div className="h-full rounded-3xl border border-border bg-card p-7 shadow-soft hover:-translate-y-1 hover:border-primary/40">
                 <div className="inline-flex rounded-xl bg-primary/10 p-3">
                   <Building2 className="h-6 w-6 text-primary" />
                 </div>
@@ -494,15 +747,17 @@ export default function AboutPage() {
                 </div>
 
                 <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-                  The branch's Expert Talk Series on research and publication
-                  was conducted with participation from the School of Computer
-                  Applications and the Internal Quality Assurance Cell.
+                  The branch&apos;s Expert Talk Series on research and
+                  publication was conducted with participation from the School
+                  of Computer Applications and the Internal Quality Assurance
+                  Cell.
                 </p>
               </div>
             </Reveal>
 
+            {/* IEEE */}
             <Reveal delay={0.1}>
-              <div className="h-full rounded-3xl border border-border bg-card p-7 hover:-translate-y-1 hover:border-primary/40 shadow-soft">
+              <div className="h-full rounded-3xl border border-border bg-card p-7 shadow-soft hover:-translate-y-1 hover:border-primary/40">
                 <div className="inline-flex rounded-xl bg-primary/10 p-3">
                   <Handshake className="h-6 w-6 text-primary" />
                 </div>
@@ -533,8 +788,9 @@ export default function AboutPage() {
               </div>
             </Reveal>
 
+            {/* Industry */}
             <Reveal delay={0.2}>
-              <div className="h-full rounded-3xl border border-border bg-card p-7 hover:-translate-y-1 hover:border-primary/40 shadow-soft">
+              <div className="h-full rounded-3xl border border-border bg-card p-7 shadow-soft hover:-translate-y-1 hover:border-primary/40">
                 <div className="inline-flex rounded-xl bg-primary/10 p-3">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
@@ -545,7 +801,7 @@ export default function AboutPage() {
 
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   Industry professionals, trainers, researchers, and domain
-                  experts contribute to the branch’s programs through:
+                  experts contribute to the branch&apos;s programs through:
                 </p>
 
                 <div className="mt-6 grid gap-3">
@@ -559,7 +815,7 @@ export default function AboutPage() {
                   ].map((item) => (
                     <div
                       key={item}
-                      className="rounded-xl hover:-translate-y-1 hover:border-primary/40 border border-border p-3 text-sm"
+                      className="rounded-xl border border-border p-3 text-sm hover:-translate-y-1 hover:border-primary/40"
                     >
                       {item}
                     </div>
@@ -571,7 +827,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Technical Focus Areas */}
+      {/* =====================================================
+          TECHNICAL FOCUS AREAS
+      ===================================================== */}
+
       <section className="border-y border-border bg-surface py-24">
         <div className="container-page">
           <SectionHeading
@@ -601,9 +860,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =========================================================
+      {/* =====================================================
           JOIN CTA
-      ========================================================= */}
+      ===================================================== */}
+
       <JoinCTA />
     </>
   );

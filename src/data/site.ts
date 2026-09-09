@@ -57,6 +57,98 @@ export const stats = [
   { value: 15, suffix: "+", label: "Student Volunteers" },
 ];
 
+/* =========================================================
+   IEEE DELHI SECTION OFFICE BEARERS
+========================================================= */
+
+export const ieeeAdvisors = [
+  {
+    name: "Prof. (Dr.) M. N. Hoda",
+    role: "Chairperson, IEEE Delhi Section",
+    image: "/advisors/mn-hoda.jpg",
+    quote:
+      "IEEE Student Branch MRIIRS is fostering a culture of innovation, leadership, and continuous learning. I encourage its students to keep exploring, collaborating, and turning ideas into meaningful impact.",
+  },
+  {
+    name: "Prof. Jasdeep Dhanoa",
+    role: "Executive Vice Chair, IEEE Delhi Section",
+    image: "/advisors/jasdeep-dhanoa.jpg",
+    quote:
+      "IEEE empowers students to learn, innovate, and lead. I encourage every student to embrace opportunities that turn knowledge into meaningful impact.",
+  },
+  {
+    name: "Prof. Rajnish Sharma",
+    role: "Vice Chair, IEEE Delhi Section",
+    image: "/advisors/rajnish-sharma.jpg",
+    quote:
+      "Innovation begins with curiosity and grows through collaboration. May IEEE continue to inspire students to explore new ideas and create solutions that make a difference.",
+  },
+  {
+    name: "Prof. Sneha Kabra",
+    role: "Secretary, IEEE Delhi Section",
+    image: "/advisors/sneha-kabra.jpg",
+    quote:
+      "IEEE provides a platform where learning meets opportunity. I encourage students to actively participate, collaborate, and make the most of their journey with IEEE.",
+  },
+  {
+    name: "Prof. Shruti Jain",
+    role: "Joint Secretary, IEEE Delhi Section",
+    image: "/advisors/shruti-jain.jpg",
+    quote:
+      "Every idea has the potential to create an impact. IEEE gives students the platform to transform their ideas into innovation through learning and collaboration.",
+  },
+  {
+    name: "Prof. Sneha Kabra",
+    role: "Treasurer, IEEE Delhi Section",
+    image: "/advisors/sneha-kabra.jpg",
+    quote:
+      "Strong communities are built through participation, commitment, and shared purpose. I encourage students to engage with IEEE and make every opportunity count.",
+  },
+];
+
+/* =========================================================
+   MRIIRS LEADERSHIP
+========================================================= */
+
+export const collegeAdvisors = [
+  {
+    name: "Prof. (Dr.) Suhail Javed Qureshi",
+    role: "Head of Department",
+    image: "/advisors/suhail-javed-qureshi.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Sanjay Srivastava",
+    role: "Vice Chancellor",
+    image: null,
+    initials: "SS",
+  },
+  {
+    name: "Prof. (Dr.) Shaveta Bhatiya",
+    role: "Dean, School of Computer Applications",
+    image: "/advisors/shaveta-bhatiya.jpg",
+  },
+  {
+    name: "Er. Sunita Joshi",
+    role: "Faculty Coordinator",
+    image: "/advisors/sunita-joshi.jpg",
+  },
+];
+
+/* =========================================================
+   DEAN MESSAGE
+========================================================= */
+
+export const deanMessage = [
+  "Welcome to the School of Computer Application at Manav Rachna International Institute of Research and Studies, where learners are at the centre of our academic and professional journey. We believe that education is not only about acquiring technical knowledge but also about developing curiosity, creativity, confidence, and the ability to solve real world problems.",
+  "Our programmes are designed to provide learners with strong foundations in computer applications while preparing them for the rapidly changing technology landscape. Through practical learning, projects, industry exposure, research, and innovation, we encourage learners to turn their ideas into meaningful solutions.",
+  "Our faculty members are committed to mentoring and supporting learners at every stage of their learning journey. We encourage every learner to explore new technologies, ask questions, embrace challenges, and continuously develop new skills.",
+  "With opportunities for collaboration, leadership, and professional growth, we aim to nurture learners who are ready to meet the demands of the global digital economy. I invite every learner to make the most of their time with us, discover their potential, and pursue their aspirations with confidence and purpose.",
+  "We look forward to seeing each of you grow into skilled professionals, responsible citizens, and future leaders in the world of technology.",
+  "At the School of Computer Application, we believe that meaningful collaborations create opportunities for learners to connect knowledge with real world experiences. These partnerships encourage knowledge exchange, innovation, research, and experiential learning. They bring diverse perspectives and create new opportunities for learners and faculty.",
+  "Our focus is to develop sustainable relationships that create meaningful value and shared growth. Through collaboration, we aim to strengthen academic excellence and contribute to a connected global technology ecosystem.",
+];
+
+
 export const eventCategories = [
   "All",
   "Workshop",
