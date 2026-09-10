@@ -134,19 +134,6 @@ export const collegeAdvisors = [
   },
 ];
 
-/* =========================================================
-   DEAN MESSAGE
-========================================================= */
-
-export const deanMessage = [
-  "Welcome to the School of Computer Application at Manav Rachna International Institute of Research and Studies, where learners are at the centre of our academic and professional journey. We believe that education is not only about acquiring technical knowledge but also about developing curiosity, creativity, confidence, and the ability to solve real world problems.",
-  "Our programmes are designed to provide learners with strong foundations in computer applications while preparing them for the rapidly changing technology landscape. Through practical learning, projects, industry exposure, research, and innovation, we encourage learners to turn their ideas into meaningful solutions.",
-  "Our faculty members are committed to mentoring and supporting learners at every stage of their learning journey. We encourage every learner to explore new technologies, ask questions, embrace challenges, and continuously develop new skills.",
-  "With opportunities for collaboration, leadership, and professional growth, we aim to nurture learners who are ready to meet the demands of the global digital economy. I invite every learner to make the most of their time with us, discover their potential, and pursue their aspirations with confidence and purpose.",
-  "We look forward to seeing each of you grow into skilled professionals, responsible citizens, and future leaders in the world of technology.",
-  "At the School of Computer Application, we believe that meaningful collaborations create opportunities for learners to connect knowledge with real world experiences. These partnerships encourage knowledge exchange, innovation, research, and experiential learning. They bring diverse perspectives and create new opportunities for learners and faculty.",
-  "Our focus is to develop sustainable relationships that create meaningful value and shared growth. Through collaboration, we aim to strengthen academic excellence and contribute to a connected global technology ecosystem.",
-];
 
 
 export const eventCategories = [

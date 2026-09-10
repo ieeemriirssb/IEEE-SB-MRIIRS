@@ -28,7 +28,7 @@ import { Reveal } from "@/components/common/Reveal";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { JoinCTA } from "@/components/sections/JoinCTA";
-import { site, ieeeAdvisors, collegeAdvisors, deanMessage } from "@/data/site";
+import { site, ieeeAdvisors, collegeAdvisors } from "@/data/site";
 
 /* =========================================================
    MISSION
@@ -567,75 +567,6 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          DEAN'S MESSAGE
-      ===================================================== */}
-
-      <section className="border-y border-border bg-surface py-24">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Dean's Message"
-            title="Empowering learners to innovate, collaborate and lead"
-            description="A message from the Dean, School of Computer Applications, MRIIRS."
-            align="center"
-          />
-
-          <Reveal>
-            <div className="mt-14 overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-              <div className="grid lg:grid-cols-[0.75fr_1.25fr]">
-                {/* Dean Photo */}
-                <div className="relative min-h-[500px] bg-primary/5">
-                  <img
-                    src="/advisors/shaveta-bhatiya.jpg"
-                    alt="Prof. (Dr.) Shaveta Bhatiya, Dean"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-8 pt-28">
-                    <p className="text-xl font-bold text-white">
-                      Prof. (Dr.) Shaveta Bhatiya
-                    </p>
-
-                    <p className="mt-1 text-sm text-white/80">
-                      Dean, School of Computer Applications, MRIIRS
-                    </p>
-                  </div>
-                </div>
-
-                {/* Message */}
-                <div className="p-8 lg:p-12">
-                  <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                    <MessageSquareQuote className="h-6 w-6 text-primary" />
-                  </div>
-
-                  <div className="space-y-5">
-                    {deanMessage.map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className="text-base leading-8 text-muted-foreground"
-                      >
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
-
-                  <div className="mt-10 border-t border-border pt-6">
-                    <p className="font-bold text-foreground">
-                      — Prof. (Dr.) Shaveta Bhatiya
-                    </p>
-
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Dean, School of Computer Applications, MRIIRS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
