@@ -112,9 +112,9 @@ export const ieeeAdvisors = [
 
 export const collegeAdvisors = [
   {
-    name: "Prof. (Dr.) Suhail Javed Qureshi",
-    role: "Head of Department",
-    image: "/advisors/suhail-javed-qureshi.jpg",
+    name: "Prof. (Dr.) Shaveta Bhatiya",
+    role: "Dean, School of Computer Applications",
+    image: "/advisors/shaveta-bhatiya.jpg",
   },
   {
     name: "Prof. (Dr.) Sanjay Srivastava",
@@ -123,9 +123,9 @@ export const collegeAdvisors = [
     initials: "SS",
   },
   {
-    name: "Prof. (Dr.) Shaveta Bhatiya",
-    role: "Dean, School of Computer Applications",
-    image: "/advisors/shaveta-bhatiya.jpg",
+    name: "Prof. (Dr.) Suhail Javed Qureshi",
+    role: "Head of Department",
+    image: "/advisors/suhail-javed-qureshi.jpg",
   },
   {
     name: "Er. Sunita Joshi",
@@ -133,8 +133,6 @@ export const collegeAdvisors = [
     image: "/advisors/sunita-joshi.jpg",
   },
 ];
-
-
 
 export const eventCategories = [
   "All",
@@ -1687,7 +1685,77 @@ export const team: Member[] = [
     github: "https://github.com/ArpitKansal01",
     image: "/teamphoto/Arpit.jpg",
   },
+  {
+    slug: "syed-faris-iqbal",
+    name: "Syed Faris Iqbal",
+    position: "Team Coordinator",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Team Coordinator of IEEE Student Branch MRIIRS for the 2026-27 session, contributing to technical content, digital initiatives, and student activities.",
+    linkedin: "https://in.linkedin.com/in/syed-iqbal-a7b570349",
+    github: "https://github.com/Faris130",
+    image: "/teamphoto/SyedFaris.jpg",
+  },
 
+  {
+    slug: "vanshika-rajpurohit",
+    name: "Vanshika Rajpurohit",
+    position: "Videographer",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Videographer of IEEE Student Branch MRIIRS for the 2026-27 session, capturing and producing engaging video content for events and digital initiatives.",
+    linkedin: "https://www.linkedin.com/in/vanshika-rajpurohit-a67476377",
+    github: "",
+    image: "/teamphoto/Vanshika.png",
+  },
+
+  {
+    slug: "daksh-sehrawat",
+    name: "Daksh Sehrawat",
+    position: "Podcast Coordinator",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Podcast Coordinator of IEEE Student Branch MRIIRS for the 2026-27 session, contributing to podcast planning, production, and engaging conversations with students and professionals.",
+    linkedin: "https://www.linkedin.com/in/daksh-sehrawat-a24716343",
+    github: "",
+    image: "/teamphoto/Daksh.jpg",
+  },
+
+  {
+    slug: "vidhi",
+    name: "Vidhi",
+    position: "Visual Media Coordinator",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Visual Media Coordinator of IEEE Student Branch MRIIRS for the 2026-27 session, contributing to visual communication, creative media, and digital content.",
+    linkedin: "https://www.linkedin.com/in/vidhi-5157b737a",
+    github: "",
+    image: "/teamphoto/Vidhi.jpg",
+  },
+
+  {
+    slug: "divya-joshi",
+    name: "Divya Joshi",
+    position: "Anchor",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Anchor of IEEE Student Branch MRIIRS for the 2026-27 session, hosting events and contributing to engaging communication and stage presence.",
+    linkedin: "https://www.linkedin.com/in/divya-joshi-54a795389",
+    github: "https://github.com/divyaajoshi",
+    image: "/teamphoto/Divya.jpg",
+  },
+
+  {
+    slug: "megha",
+    name: "Megha",
+    position: "Photographer",
+    department: "SCA, MRIIRS",
+    group: "Session 2026-27",
+    bio: "Photographer of IEEE Student Branch MRIIRS for the 2026-27 session, capturing memorable moments, events, and activities through creative photography.",
+    linkedin: "https://www.linkedin.com/in/megha-dev666",
+    github: "https://github.com/megha666-png",
+    image: "/teamphoto/Megha.jpg",
+  },
   // =====================================================
   // FACULTY
   // =====================================================
