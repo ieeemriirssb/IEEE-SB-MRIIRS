@@ -1410,10 +1410,10 @@ export const events: EventItem[] = [
   {
     slug: "csr-activity",
     title: "CSR Activity",
-    date: "",
-    dateLabel: "",
+    date: "2026-09-17",
+    dateLabel: "17 September 2026",
     time: "",
-    location: "",
+    location: "MRIIRS Campus",
     category: "Social",
     excerpt:
       "An upcoming community outreach initiative aimed at extending technology, education, and awareness beyond the university campus.",
@@ -1444,7 +1444,81 @@ export const events: EventItem[] = [
     status: "Upcoming",
     image: Upcoming.src,
   },
+  {
+    slug: "podcast",
+    title: "Podcast",
+    date: "2026-10-06",
+    dateLabel: "6 October 2026",
+    time: "",
+    location: "MRIIRS Campus",
+    category: "Media",
+    excerpt:
+      "An engaging podcast initiative featuring conversations around technology, innovation, student experiences, and emerging opportunities.",
+    description:
+      "IEEE Student Branch MRIIRS is organizing a podcast initiative designed to provide an engaging platform for conversations around technology, innovation, student experiences, career opportunities, and emerging trends. The podcast aims to encourage knowledge sharing, meaningful discussions, and greater awareness among students.",
+    organizer: "IEEE Student Branch MRIIRS",
+    speakers: [],
+    agenda: [
+      {
+        time: "",
+        item: "Introduction and overview",
+      },
+      {
+        time: "",
+        item: "Technology and innovation discussion",
+      },
+      {
+        time: "",
+        item: "Student experiences and opportunities",
+      },
+      {
+        time: "",
+        item: "Interactive discussion and insights",
+      },
+    ],
+    requirements: [],
+    faqs: [],
+    status: "Upcoming",
+    image: Upcoming.src,
+  },
 
+  {
+    slug: "resume-building",
+    title: "Resume Building",
+    date: "2026-09-16",
+    dateLabel: "16 September 2026",
+    time: "",
+    location: "MRIIRS Campus",
+    category: "Career",
+    excerpt:
+      "A career-focused session designed to help students create effective, professional, and industry-ready resumes.",
+    description:
+      "IEEE Student Branch MRIIRS is organizing a Resume Building session to help students understand how to create professional and industry-ready resumes. The session will focus on resume structure, effective presentation of skills and projects, common mistakes, and strategies to make a resume stand out to recruiters.",
+    organizer: "IEEE Student Branch MRIIRS",
+    speakers: [],
+    agenda: [
+      {
+        time: "",
+        item: "Understanding resume structure",
+      },
+      {
+        time: "",
+        item: "Highlighting skills and projects",
+      },
+      {
+        time: "",
+        item: "Common resume mistakes",
+      },
+      {
+        time: "",
+        item: "Creating an industry-ready resume",
+      },
+    ],
+    requirements: [],
+    faqs: [],
+    status: "Upcoming",
+    image: Upcoming.src,
+  },
   {
     slug: "networking-activity",
     title: "Networking Activity",
@@ -1527,6 +1601,67 @@ export const events: EventItem[] = [
     faqs: [],
     status: "Upcoming",
     image: Upcoming.src,
+  },
+  {
+    slug: "ice-breaking-and-networking-activity",
+    title: "Ice-Breaking & Networking Activity",
+    date: "2026-09-10",
+    dateLabel: "10 SEP 2026",
+    time: "2:00 PM onwards",
+    location: "MRIIRS Campus",
+    category: "Networking",
+    excerpt:
+      "An engaging ice-breaking and networking activity featuring a fun general knowledge quiz designed to encourage interaction, participation, and connections among students.",
+    description:
+      "IEEE Student Branch MRIIRS organized an Ice-Breaking & Networking Activity on 10 September 2026 to encourage students to interact, connect, and engage with one another in a fun and informal setting. The activity featured an interactive general knowledge quiz covering a variety of topics, including science, geography, mathematics, and everyday knowledge. Questions ranged from identifying the Red Planet and the largest ocean on Earth to solving simple mathematical questions such as the square root of 81. The activity provided an enjoyable opportunity for students to participate in a light-hearted quiz while getting to know their peers and building a stronger sense of community within the IEEE Student Branch.",
+    organizer: "IEEE Student Branch MRIIRS",
+    speakers: [],
+    agenda: [
+      {
+        time: "2:00 PM",
+        item: "Ice-Breaking and Introduction",
+      },
+      {
+        time: "2:15 PM",
+        item: "General Knowledge Quiz",
+      },
+      {
+        time: "2:45 PM",
+        item: "Interactive Networking Activity",
+      },
+      {
+        time: "3:00 PM",
+        item: "Conclusion and Wrap-Up",
+      },
+    ],
+
+    requirements: [
+      "No specific prerequisites required",
+      "Open to students interested in networking and interactive activities",
+    ],
+
+    faqs: [
+      {
+        q: "Who could attend?",
+        a: "Students interested in participating in an interactive ice-breaking and networking activity.",
+      },
+      {
+        q: "What activities were conducted?",
+        a: "The activity featured a general knowledge quiz covering topics such as science, geography, mathematics, and everyday knowledge.",
+      },
+      {
+        q: "What was the purpose of the activity?",
+        a: "The activity aimed to encourage student interaction, networking, participation, and a stronger sense of community within the IEEE Student Branch.",
+      },
+      {
+        q: "When was the activity conducted?",
+        a: "The activity was conducted on 10 September 2026 from 2:00 PM onwards.",
+      },
+    ],
+
+    status: "Completed",
+    past: true,
+    image: "/events/iceBreaking.png",
   },
 ];
 
