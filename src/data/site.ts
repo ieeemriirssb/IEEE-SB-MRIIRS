@@ -18,7 +18,7 @@ import AISmartLearning from "@/assets/AISmartLearning.png";
 import Upcoming from "@/assets/Upcoming.png";
 
 export const site = {
-  collegeName: "Manav Rachna International Instititute of Research and Studies",
+  collegeName: "Manav Rachna International Institute of Research and Studies",
   shortName: "IEEE_SB_MRIIRS",
   branchName: "IEEE Student Branch MRIIRS",
   tagline: "Empowering Minds, Shaping the Future",
