@@ -25,7 +25,7 @@ export const site = {
   email: "ieeemriirssb@gmail.com",
   address:
     "Plot A, Manav Rachna Campus Road, Gadakhor Basti Village, Sector 43, Faridabad, Haryana 121004, India",
-  mapQuery: "Manav Rachna International Instititute of Research and Studies",
+  mapQuery: "Manav Rachna International Institute of Research and Studies",
   social: {
     linkedin: "https://www.linkedin.com/company/mriirs-ieee",
     instagram: "https://www.instagram.com/ieee_mriirs_sb",
@@ -1318,9 +1318,9 @@ export const events: EventItem[] = [
   {
     slug: "capture-the-flag-ctf",
     title: "Capture The Flag (CTF)",
-    date: "",
-    dateLabel: "",
-    time: "",
+    date: "2026-10-13",
+    dateLabel: "13-14 Oct 2026",
+    time: "10:00 AM",
     location: "MRIIRS Campus, Faridabad",
     category: "Competition",
     excerpt:
@@ -1357,8 +1357,8 @@ export const events: EventItem[] = [
     ],
     requirements: ["Interest in cybersecurity", "Problem-solving mindset"],
     faqs: [],
-    status: "Upcoming",
-    image: Upcoming.src,
+    status: "Open",
+    image: "/events/CTF.png",
   },
 
   {
