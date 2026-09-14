@@ -112,18 +112,18 @@ export const ieeeAdvisors = [
 
 export const collegeAdvisors = [
   {
-    name: "Prof. (Dr.) Shaveta Bhatiya",
-    role: "Dean, School of Computer Applications",
-    image: "/advisors/shaveta-bhatiya.jpg",
-  },
-  {
     name: "Prof. (Dr.) Sanjay Srivastava",
     role: "Vice Chancellor",
     image: null,
     initials: "SS",
   },
   {
-    name: "Prof. (Dr.) Suhail Javed Qureshi",
+    name: "Prof. (Dr.) Shaveta Bhatia",
+    role: "Dean, School of Computer Applications",
+    image: "/advisors/shaveta-bhatiya.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Suhail Javed Quraishi",
     role: "Head of Department",
     image: "/advisors/suhail-javed-qureshi.jpg",
   },
@@ -1331,27 +1331,27 @@ export const events: EventItem[] = [
     speakers: [],
     agenda: [
       {
-        time: "",
+        time: "10:00 AM",
         item: "Challenge-based cybersecurity problems",
       },
       {
-        time: "",
+        time: "11:00 AM",
         item: "Cryptography",
       },
       {
-        time: "",
+        time: "12:00 PM",
         item: "Web security",
       },
       {
-        time: "",
+        time: "01:00 PM",
         item: "OSINT",
       },
       {
-        time: "",
+        time: "02:00 PM",
         item: "Reverse engineering",
       },
       {
-        time: "",
+        time: "03:00 PM",
         item: "Forensics",
       },
     ],
