@@ -163,6 +163,7 @@ export type EventItem = {
   participants?: number;
   past?: boolean;
   image: string;
+  registrationLink?: string;
 };
 
 const img = (q: string) =>
