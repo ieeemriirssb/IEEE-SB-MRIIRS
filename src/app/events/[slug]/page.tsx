@@ -169,10 +169,16 @@ export default function EventDetail() {
                 className="group mt-7 w-full cursor-target"
                 disabled={event.past}
               >
-                {event.status =="Upcoming" ? (<span>Open Soon</span>):event.past ? (
+                {event.status == "Upcoming" ? (
+                  <span>Open Soon</span>
+                ) : event.past ? (
                   <span>Event completed</span>
                 ) : (
-                  <a href={site.joinUrl} target="_blank" rel="noreferrer">
+                  <a
+                    href={event.registrationLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Register Now
                     <ArrowRight className="transition-transform group-hover:translate-x-1" />
                   </a>

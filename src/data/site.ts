@@ -1359,6 +1359,7 @@ export const events: EventItem[] = [
     requirements: ["Interest in cybersecurity", "Problem-solving mindset"],
     faqs: [],
     status: "Open",
+    registrationLink: "https://forms.gle/Hu2jzSbJXokMFtS6A",
     image: "/events/CTF.png",
   },
 
