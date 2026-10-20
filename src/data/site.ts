@@ -1638,8 +1638,8 @@ export const events: EventItem[] = [
   {
     slug: "podcast-dr-priyanka-sharma",
     title: "Podcast with Dr. Priyanka Sharma",
-    date: "2025-08-31",
-    dateLabel: "31st August 2025",
+    date: "2026-08-31",
+    dateLabel: "31st August 2026",
     time: "N/A",
     location: "Online — LinkedIn and YouTube",
     category: "Podcast",
