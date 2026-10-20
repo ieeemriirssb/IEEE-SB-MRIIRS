@@ -1317,49 +1317,62 @@ export const events: EventItem[] = [
   },
 
   {
-    slug: "capture-the-flag-ctf",
-    title: "Capture The Flag (CTF)",
+    slug: "demon-ctf-2026",
+    title: "Demon CTF 2026",
     date: "2026-10-13",
-    dateLabel: "13-14 Oct 2026",
-    time: "10:00 AM",
-    location: "MRIIRS Campus, Faridabad",
-    category: "Competition",
+    dateLabel: "13th–14th October 2026",
+    time: "9:00 AM – 2:00 PM",
+    location: "MRIIRS Campus (Offline Finals)",
+    category: "Cybersecurity Competition",
     excerpt:
-      "An upcoming challenge-based cybersecurity experience designed to develop security awareness, problem-solving, and practical technical skills.",
+      "Demon CTF 2026 is a Demon Slayer-themed Capture the Flag competition organized by the IEEE Student Branch, MRIIRS. Participants take on cybersecurity challenges across forensics, cryptography, web exploitation, reverse engineering, PWN, OSINT, and miscellaneous categories.",
     description:
-      "The upcoming Capture The Flag initiative is intended to provide students with an engaging, challenge-based cybersecurity experience. Participants will solve technical and logical problems designed to test analytical thinking, security awareness, problem-solving, and practical technical skills.",
-    organizer: "IEEE Student Branch MRIIRS",
+      "Demon CTF 2026 brings cybersecurity enthusiasts together for a Demon Slayer-themed Capture the Flag competition centered on hunting vulnerabilities and solving technical challenges. Participants compete individually or in teams of up to four members, testing their skills across forensics, cryptography, web security, reverse engineering, PWN, OSINT, and miscellaneous challenges. The event features offline finals at MRIIRS, along with exciting prizes and goodies. Inspired by the spirit of the Demon Slayer universe, the competition encourages participants to educate, innovate, and secure while developing practical cybersecurity skills.",
+    organizer: "IEEE Student Branch, MRIIRS",
     speakers: [],
     agenda: [
       {
-        time: "10:00 AM",
-        item: "Challenge-based cybersecurity problems",
+        time: "9:00 AM",
+        item: "Competition begins",
       },
       {
-        time: "11:00 AM",
-        item: "Cryptography",
+        time: "9:00 AM – 2:00 PM",
+        item: "Capture the Flag challenges across cybersecurity categories",
       },
       {
-        time: "12:00 PM",
-        item: "Web security",
-      },
-      {
-        time: "01:00 PM",
-        item: "OSINT",
-      },
-      {
-        time: "02:00 PM",
-        item: "Reverse engineering",
-      },
-      {
-        time: "03:00 PM",
-        item: "Forensics",
+        time: "2:00 PM",
+        item: "Competition session concludes",
       },
     ],
-    requirements: ["Interest in cybersecurity", "Problem-solving mindset"],
-    faqs: [],
-    status: "Open",
-    registrationLink: "https://forms.gle/Hu2jzSbJXokMFtS6A",
+    requirements: [
+      "Participants may compete individually or in teams of up to four members.",
+      "Participants should have an interest in cybersecurity and problem-solving.",
+      "Registration is required.",
+    ],
+    faqs: [
+      {
+        q: "What is Demon CTF 2026?",
+        a: "Demon CTF 2026 is a Demon Slayer-themed Capture the Flag competition featuring practical cybersecurity challenges.",
+      },
+      {
+        q: "What are the challenge categories?",
+        a: "The categories include Forensics, Crypto, Web, Reverse Engineering, PWN, OSINT, and Miscellaneous.",
+      },
+      {
+        q: "Can participants compete in teams?",
+        a: "Yes. Participants can compete individually or in teams of up to four members.",
+      },
+      {
+        q: "Where will the offline finals take place?",
+        a: "The offline finals will take place at MRIIRS.",
+      },
+      {
+        q: "Will there be prizes?",
+        a: "Yes. The event poster mentions exciting prizes and goodies.",
+      },
+    ],
+    status: "Completed",
+    past: true,
     image: "/events/CTF.png",
   },
 
@@ -1560,50 +1573,272 @@ export const events: EventItem[] = [
   },
 
   {
-    slug: "ieee-week-2026",
-    title: "IEEE Week 2026",
-    date: "",
-    dateLabel: "",
-    time: "",
-    location: "",
-    category: "Social",
+    slug: "ieee-celebration-week-2026",
+    title: "IEEE Celebration Week 2026",
+    date: "2026-10-10",
+    dateLabel: "10th–19th October 2026",
+    time: "Online — Schedule varies by event",
+    location: "Online",
+    category: "Celebration",
     excerpt:
-      "A flagship IEEE celebration bringing together technical, professional, creative, interactive, and community activities.",
+      "The IEEE Student Branch, MRIIRS, celebrates IEEE Day 2026 with IEEE Celebration Week, a week-long online festival featuring digital poster making, CTF competitions, blog writing, fun online quizzes, and a closing and felicitation ceremony.",
     description:
-      "IEEE Week 2026 will serve as a flagship celebration of the IEEE community at MRIIRS, bringing together technical, professional, creative, and interactive activities throughout the week. The celebration will provide students with opportunities to participate in technical challenges, expert interactions, networking initiatives, workshops, competitions, and community-focused activities.",
-    organizer: "IEEE Student Branch MRIIRS",
+      "On the occasion of IEEE Day 2026, the IEEE Student Branch, MRIIRS, presents IEEE Celebration Week, a multi-day online festival running from 10th to 19th October 2026. The celebration brings together creativity, technology, cybersecurity, and knowledge-sharing through a series of engaging activities. Events include Digital Poster Making on Artificial Intelligence, Capture the Flag (CTF) competitions, Blog Writing on Artificial Intelligence in Education, and a Fun Online Quiz on technology and innovation. The celebration concludes with a closing and felicitation ceremony recognizing talent, creativity, and achievement.",
+    organizer: "IEEE Student Branch, MRIIRS",
     speakers: [],
     agenda: [
       {
-        time: "",
-        item: "Technical challenges",
+        time: "10th October 2026",
+        item: "Day 1 — Digital Poster Making: The Ethical Intelligence Era: Shaping the Future",
       },
       {
-        time: "",
-        item: "Expert interactions",
+        time: "12th October 2026",
+        item: "Day 2 — CTF: Leadership for a Better Tomorrow",
       },
       {
-        time: "",
-        item: "Networking initiatives",
+        time: "13th October 2026",
+        item: "Day 3 — CTF: Capture the Flag, themed around cybersecurity and digital worlds",
       },
       {
-        time: "",
-        item: "Workshops",
+        time: "14th October 2026",
+        item: "Day 4 — CTF: Capture the Flag, themed around cybersecurity and digital worlds",
       },
       {
-        time: "",
-        item: "Competitions",
+        time: "15th October 2026",
+        item: "Day 5 — Blog Writing: The Impact of Artificial Intelligence on Education",
       },
       {
-        time: "",
-        item: "Community-focused activities",
+        time: "16th October 2026",
+        item: "Day 6 — Fun Online Quiz: Techno-logical Innovation Quiz",
+      },
+      {
+        time: "19th October 2026",
+        item: "Day 7 — Closing and Felicitation: Theme, Collecting Innovation, Talent & Achievement",
       },
     ],
-    requirements: ["MRIIRS students", "IEEE community members"],
+    requirements: [
+      "Participation details and activity-specific instructions are provided through the respective event registrations.",
+    ],
     faqs: [],
-    status: "Upcoming",
-    image: Upcoming.src,
+    status: "Completed",
+    past: true,
+    image: "/events/IEEEWeek.png",
   },
+
+  {
+    slug: "ieee-website-launch",
+    title: "IEEE Student Branch MRIIRS Website Launch",
+    date: "2026-09-14",
+    dateLabel: "14th September 2026",
+    time: "N/A",
+    location: "Online",
+    category: "Launch",
+    excerpt:
+      "The IEEE Student Branch, MRIIRS, officially launched its website on 14th September 2026, establishing a dedicated online platform to showcase the branch's activities, events, initiatives, and achievements.",
+    description:
+      "The IEEE Student Branch, MRIIRS, officially launched its website on 14th September 2026. The website serves as a dedicated digital platform for the student branch, providing an online presence to share information about its activities, events, initiatives, and achievements.",
+    organizer: "IEEE Student Branch, MRIIRS",
+    speakers: [],
+    agenda: [],
+    requirements: [],
+    faqs: [],
+    status: "Completed",
+    past: true,
+    image: "/events/webLaunch.png",
+  },
+
+  {
+    slug: "expert-talk-series-10",
+    title:
+      "Expert Talk Series 10: Resume Building — Craft Your Skills, Build Your Future",
+    date: "2026-10-01",
+    dateLabel: "1st October 2026",
+    time: "4:30 PM – 5:30 PM",
+    location: "Online — Microsoft Teams",
+    category: "Seminar",
+    excerpt:
+      "IEEE Student Branch MRIIRS, in association with the School of Computer Applications and MRIIRS, organized Expert Talk Series 10 featuring Mr. Shivam Grover. The session focused on professional resume building, interdisciplinary learning, career development, and industry expectations.",
+    description:
+      "The IEEE Student Branch, MRIIRS, in association with the School of Computer Applications and Manav Rachna International Institute of Research and Studies, organized Expert Talk Series 10 on “Resume Building: Craft Your Skills, Build Your Future,” featuring Mr. Shivam Grover. The session provided students with valuable insights into creating professional, effective, and industry-ready resumes. Participants learned how to highlight academic achievements, technical skills, projects, and experience while tailoring resumes to specific job roles. The discussion covered resume formatting, current industry expectations, recruitment practices, and common resume-writing mistakes to avoid. The session also emphasized presenting qualifications and strengths confidently, identifying relevant career opportunities, and taking proactive steps toward professional growth. Through expert guidance and an interactive discussion, students gained practical knowledge to strengthen their resumes and prepare for future job applications.",
+    organizer:
+      "IEEE Student Branch, MRIIRS, in association with the School of Computer Applications, MRIIRS",
+    speakers: [
+      {
+        name: "Mr. Shivam Grover",
+        role: "Guest Speaker — HR Professional",
+      },
+    ],
+    agenda: [
+      {
+        time: "4:30 PM",
+        item: "Career Guidance and Introduction to Professional Resume Building",
+      },
+      {
+        time: "4:45 PM",
+        item: "Presenting Qualifications, Skills, and Strengths Effectively",
+      },
+      {
+        time: "5:00 PM",
+        item: "Preparing an Industry-Ready Resume",
+      },
+      {
+        time: "5:20 PM",
+        item: "Interactive Discussion and Q&A",
+      },
+    ],
+    requirements: ["No specific prerequisites required."],
+    faqs: [
+      {
+        q: "Who could attend the session?",
+        a: "Anyone interested in building a professional resume and improving their career prospects could attend.",
+      },
+      {
+        q: "Who was the speaker?",
+        a: "Mr. Shivam Grover, an HR professional.",
+      },
+      {
+        q: "What was the focus of the event?",
+        a: "Resume Building: Craft Your Skills, Build Your Future, covering resume writing, formatting, industry expectations, and career preparation.",
+      },
+      {
+        q: "Where was the session conducted?",
+        a: "The session was conducted online through a Microsoft Teams meeting.",
+      },
+    ],
+    status: "Completed",
+    past: true,
+    image: "/events/ExpertTalk10.png",
+  },
+
+  {
+    slug: "podcast-dr-priyanka-sharma",
+    title: "Podcast with Dr. Priyanka Sharma",
+    date: "2025-08-31",
+    dateLabel: "31st August 2025",
+    time: "N/A",
+    location: "Online — LinkedIn and YouTube",
+    category: "Podcast",
+    excerpt:
+      "Finding Yourself Beyond Work — a conversation about mental health, work-life balance, and personal growth beyond professional success.",
+    description:
+      "The IEEE Student Branch, MRIIRS, presents a podcast featuring Dr. Priyanka Sharma titled 'Finding Yourself Beyond Work'. The conversation explores the importance of mental health in one's career, maintaining a balance between personal and professional life, managing workplace stress and burnout, and redefining success beyond professional achievements. The podcast encourages individuals to prioritise their well-being while pursuing their career goals, reinforcing the message that your career is a part of your life, not your entire life. The podcast is available on LinkedIn and YouTube.",
+    organizer: "IEEE Student Branch, MRIIRS",
+    speakers: [
+      {
+        name: "Dr. Priyanka Sharma",
+        role: "Podcast Guest",
+      },
+    ],
+    agenda: [
+      {
+        time: "N/A",
+        item: "Mental Health in Career",
+      },
+      {
+        time: "N/A",
+        item: "Balancing Personal and Professional Life",
+      },
+      {
+        time: "N/A",
+        item: "Managing Workplace Stress and Preventing Burnout",
+      },
+      {
+        time: "N/A",
+        item: "Redefining Success and Finding Purpose Beyond Work",
+      },
+    ],
+    requirements: [],
+    faqs: [],
+    status: "Completed",
+    past: true,
+    image: "/events/PriyankaPodcast.png",
+  },
+
+  {
+    slug: "hindi-diwas-blog-writing-competition-2026",
+    title: "Hindi Diwas Blog Writing Competition: Origin of Hindi",
+    date: "N/A",
+    dateLabel: "N/A",
+    time: "N/A",
+    location: "Online",
+    category: "Competition",
+    excerpt:
+      "IEEE Student Branch MRIIRS organized a Hindi Diwas Blog Writing Competition on the theme “Origin of Hindi.” Participants explored the roots, journey, and evolution of Hindi through original blog submissions.",
+    description:
+      "On the occasion of Hindi Diwas, IEEE Student Branch MRIIRS organized an online Blog Writing Competition on the theme “Origin of Hindi.” The competition encouraged participants to explore the roots, history, journey, and evolution of the Hindi language through thoughtful and original blog writing. Participants were required to create and publish a blog on the given topic, obtain the blog link, and submit it through the provided Google Form. The competition aimed to promote Hindi language, encourage creative expression, and provide a platform for participants to share their ideas and perspectives. Winners were eligible for exciting rewards and recognition on the IEEE Student Branch MRIIRS website.",
+    organizer: "IEEE Student Branch, MRIIRS",
+    speakers: [],
+    agenda: [
+      {
+        time: "N/A",
+        item: "Registration and creation of a Medium account",
+      },
+      {
+        time: "N/A",
+        item: "Writing and publishing an original blog on “Origin of Hindi”",
+      },
+      {
+        time: "N/A",
+        item: "Submitting the published blog link through the Google Form",
+      },
+    ],
+    requirements: [
+      "Register for the competition using the provided Google Form.",
+      "Create and publish an original blog on Medium on the theme “Origin of Hindi.”",
+      "Submit the published blog link through the Google Form.",
+      "Ensure the submission is original and free from plagiarism.",
+    ],
+    faqs: [
+      {
+        q: "Who could participate?",
+        a: "Participants interested in Hindi, language, and blog writing could register for the competition.",
+      },
+      {
+        q: "What was the competition topic?",
+        a: "The topic was “Origin of Hindi,” focusing on the roots, history, and evolution of the language.",
+      },
+      {
+        q: "How was participation completed?",
+        a: "Participants registered, wrote and published their blogs on Medium, and submitted their blog links through the Google Form.",
+      },
+      {
+        q: "Were there any rewards?",
+        a: "Yes. The poster announced prizes for the top three winners.",
+      },
+    ],
+    status: "Completed",
+    past: true,
+    image: "",
+  },
+
+  {
+    slug: "podcast-dr-sanjay-srivastava-bhagavad-geeta",
+    title:
+      "Podcast with Dr. Sanjay Srivastava: Ancient Wisdom for Modern Student Life",
+    date: "2026-09-24",
+    dateLabel: "24th September 2026",
+    time: "N/A",
+    location: "N/A",
+    category: "Podcast",
+    excerpt:
+      "The IEEE Student Branch, MRIIRS, presents a podcast featuring Dr. Sanjay Srivastava, Vice Chancellor of MRIIRS, on “Ancient Wisdom for Modern Student Life: The Bhagavad Geeta.” The conversation explores how timeless wisdom can guide students in navigating modern academic and personal challenges.",
+    description:
+      "The IEEE Student Branch, MRIIRS, presents a podcast featuring Dr. Sanjay Srivastava, Vice Chancellor of Manav Rachna International Institute of Research and Studies (MRIIRS). Titled “Ancient Wisdom for Modern Student Life: The Bhagavad Geeta,” the podcast explores the relevance of the Bhagavad Geeta in contemporary student life. The conversation connects ancient wisdom with modern educational experiences, personal development, and the challenges students face in their academic and personal journeys. The session aims to encourage students to reflect on timeless teachings and apply their insights to modern life.",
+    organizer: "IEEE Student Branch, MRIIRS",
+    speakers: [
+      {
+        name: "Dr. Sanjay Srivastava",
+        role: "Vice Chancellor, MRIIRS",
+      },
+    ],
+    agenda: [],
+    requirements: [],
+    faqs: [],
+    status: "Completed",
+    past: true,
+    image: "/events/SanjayPodcast.png",
+  },
+
   {
     slug: "ice-breaking-and-networking-activity",
     title: "Ice-Breaking & Networking Activity",
