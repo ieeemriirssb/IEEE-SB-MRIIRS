@@ -2350,6 +2350,12 @@ export const achievements = [
     title: "IEEE Student Branch MRIIRS Established",
     body: "IEEE SB MRIIRS was established in 2025 to provide students with opportunities for technical learning, innovation, professional development, networking, and leadership.",
   },
+
+  {
+  "year": "2026",
+  "title": "New Milestone or Award",
+  "body": "Description of the milestone or recognition achieved by the student branch."
+},
 ];
 
 export const galleryCategories = [
@@ -2415,6 +2421,14 @@ export const gallery = [
     src: "/gallery/image8.png",
     tall: true,
   },
+
+  {
+  "id": 9,
+  "category": "Events",
+  "caption": "New Gallery Memory",
+  "src": "",
+  "tall": false
+},
 ];
 
 export const testimonials = [
